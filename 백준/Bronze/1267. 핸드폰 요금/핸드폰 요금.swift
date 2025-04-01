@@ -10,7 +10,6 @@ func getFee() {
     let yPrice = 10
     let mPrice = 15
     
-    var fee = 0
     var yFee = 0
     var mFee = 0
     var minName = ""
@@ -28,9 +27,8 @@ func getFee() {
         minName = "Y M"
     }
     
-    fee = min(yFee, mFee)
-
-    print(minName, fee)
+    print(minName, min(yFee, mFee))
 }
+
 
 getFee()
